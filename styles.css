@@ -23,7 +23,7 @@ body {
     justify-content: center;
     align-items: start;
 
-    height: 100vh;
+    height: 100%;
     gap: 27px;
     padding: 56px 0;
 }
