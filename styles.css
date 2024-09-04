@@ -1,5 +1,5 @@
 :root {
-    --backgroud-color: #00090E;
+    --background-color: #00090E;
     --text-color: #E1E1E1;
     --primary-color: #81FE88;
     --secondary-color: #888888;
@@ -15,7 +15,7 @@
 }
 
 body {
-    background-color: var(--backgroud-color);
+    background-color: var(--background-color);
     color: var(--text-color);
     font-family: var(--font-family);
 
@@ -23,7 +23,7 @@ body {
     justify-content: center;
     align-items: start;
 
-    height: 100%;
+    height: 100vh;
     gap: 27px;
     padding: 56px 0;
 }
@@ -51,7 +51,7 @@ aside {
     gap: 10px;
     align-items: center;
     text-decoration: none;
-    color: var(--text-color);
+    color: var(--secondary-color);
     font-size: 22px;
 }
 
@@ -82,12 +82,7 @@ h2 {
 form {
     display: flex;
     flex-direction: column;
-    gap: 24px;
-}
-
-form div {
-    display: flex;
-    flex-direction: column;
+    gap: 24px
 }
 
 form div label {
@@ -97,7 +92,8 @@ form div label {
     margin-bottom: 8px;
 }
 
-form div input, textarea {
+form div input,
+textarea {
     width: 100%;
     padding: 8px 16px;
     background-color: var(--secondary-color);
@@ -111,18 +107,19 @@ form div input {
     height: 39px;
 }
 
-textarea {
+texarea {
     height: 161px;
 }
 
 .lista-tags li {
     display: flex;
     background-color: var(--secondary-color);
-    color: var(--backgroud-color);
+    color: var(--background-color);
     gap: 10px;
     padding: 4px 8px;
     border-radius: 4px;
 }
+
 
 .lista-tags {
     display: flex;
@@ -130,7 +127,6 @@ textarea {
 
 .container-botoes {
     display: flex;
-    flex-direction: row;
     gap: 24px;
     justify-content: space-between;
 }
@@ -154,7 +150,7 @@ textarea {
 
 .botao-descartar::after {
     content: "";
-    background-image: url("img/trash.svg") ;
+    background-image: url("./img/trash.svg");
     background-size: contain;
     background-repeat: no-repeat;
     width: 15px;
@@ -168,14 +164,14 @@ textarea {
 
 .botao-publicar {
     background-color: var(--primary-color);
-    color: var(--backgroud-color);
+    color: var(--background-color);
     border: none;
     position: relative;
 }
 
 .botao-publicar::after {
     content: "";
-    background-image: url("img/arrow_forward2.svg") ;
+    background-image: url("../img/arrow_forward2.svg");
     background-size: contain;
     background-repeat: no-repeat;
     width: 15px;
@@ -197,7 +193,7 @@ textarea {
     object-fit: cover;
 }
 
-.container-image {
+.container-imagem {
     height: 368px;
     padding: 24px 16px;
     background-color: var(--secondary-color);
@@ -205,8 +201,8 @@ textarea {
 }
 
 .container-upload-imagem button {
-    background-color: var(--itens-background);
     margin: 16px 0 8px 0;
+    background-color: var(--itens-background);
     border: 1px solid var(--secondary-color);
     border-radius: 8px;
     color: var(--secondary-color);
@@ -221,7 +217,7 @@ textarea {
 
 .container-upload-imagem button::after {
     content: "";
-    background-image: url(img/upload.svg);
+    background-image: url("./img/upload.svg");
     background-size: contain;
     background-repeat: no-repeat;
     display: inline-block;
@@ -230,10 +226,10 @@ textarea {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    margin-left: 8px;
+    margin-left: 8px
 }
 
-.container-image-nome {
+.container-imagem-nome {
     display: flex;
     gap: 8px;
     color: var(--secondary-color);
